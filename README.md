@@ -1,2 +1,18 @@
 # react-init
-React boilerplate
+React boilerplate. Uses server-side rendering.
+
+### Build server code
+
+`npm run buildServer`
+
+### Build client code
+
+`npm run buildClient`
+
+### Run server
+
+`npm run server`
+
+### Run server while listening for changes in source code for automatic building
+
+`npm start`
