@@ -11,7 +11,7 @@ React boilerplate. Uses server-side rendering.
 
 ### Run server
 
-`npm run serve`
+`npm run server`
 
 ### Run server while listening for changes in source code for automatic building
 
