@@ -4,7 +4,10 @@
   "description": "React boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buildClient": "./node_modules/.bin/webpack --config webpack-client-config.js",
+    "buildServer": "./node_modules/.bin/webpack --config webpack-server-config.js",
+    "serve": "./server.js",
+    "start": "concurrently --kill-others --raw \"./node_modules/.bin/webpack --watch --config webpack-server-config.js\" \"./node_modules/.bin/webpack --watch --config webpack-client-config.js\" \"./node_modules/.bin/nodemon server.js\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,21 @@
   "bugs": {
     "url": "https://github.com/shooter90125/react-init/issues"
   },
-  "homepage": "https://github.com/shooter90125/react-init#readme"
+  "homepage": "https://github.com/shooter90125/react-init#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
 }
