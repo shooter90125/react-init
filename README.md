@@ -1,5 +1,5 @@
 # react-init
-React boilerplate. Uses server-side rendering.
+React boilerplate. Uses server-side rendering and isomorphic routing. Add your code to `src/app.js`.
 
 ### Build server code
 
